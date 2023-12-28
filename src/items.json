@@ -1,0 +1,420 @@
+{
+  "Malachite": {
+    "planets": "Calidor, Sylva"
+  },
+  "Titanite": {
+    "planets": "Vesania, Glacio"
+  },
+  "Sphalerite": {
+    "planets": "Desolo, Sylva"
+  },
+  "Wolframite": {
+    "planets": "Desolo, Calidor"
+  },
+  "Lithium": {
+    "planets": "Vesania, Novus"
+  },
+  "Laterite": {
+    "planets": "All"
+  },
+  "Hematite": {
+    "planets": "Glacio, Novus"
+  },
+  "Hydrogen": {
+    "planets": "Vesania, Sylva, Calidor, Novus"
+  },
+  "Argon": {
+    "planets": "Glacio, Vesania"
+  },
+  "Methane": {
+    "planets": "Atrox, Novus"
+  },
+  "Nitrogen": {
+    "planets": "Sylva, Vesania, Atrox"
+  },
+  "Sulfur": {
+    "planets": "Calidor, Atrox"
+  },
+  "Helium": {
+    "planets": "Atrox"
+  },
+  "Carbon": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Organic"
+    ]
+  },
+  "Copper": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Malachite"
+    ]
+  },
+  "Glass": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Quartz"
+    ]
+  },
+  "Iron": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Hematite"
+    ]
+  },
+  "Small Solar Panel": {
+    "method": "Backpack",
+    "sources": [
+      "Copper"
+    ]
+  },
+  "Titanium": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Titanite"
+    ]
+  },
+  "Ceramic": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Clay"
+    ]
+  },
+  "Tungsten": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Wolframite"
+    ]
+  },
+  "Aluminum": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Laterite"
+    ]
+  },
+  "Zinc": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Sphalerite"
+    ]
+  },
+  "Drill Mod 3": {
+    "method": "Small Printer",
+    "sources": [
+      "Diamond"
+    ]
+  },
+  "Hydrazine Jet Pack": {
+    "method": "Small Printer",
+    "sources": [
+      "Titanium Alloy"
+    ]
+  },
+  "Portable Oxygenator": {
+    "method": "Small Printer",
+    "sources": [
+      "Nanocarbon Alloy"
+    ]
+  },
+  "Probe Scanner": {
+    "method": "Small Printer",
+    "sources": [
+      "Steel"
+    ]
+  },
+  "Aluminum Alloy": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Aluminum",
+      "Copper"
+    ]
+  },
+  "Graphene": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Graphite",
+      "Hydrazine"
+    ]
+  },
+  "Medium Solar Panel": {
+    "method": "Small Printer",
+    "sources": [
+      "Copper",
+      "Glass"
+    ]
+  },
+  "RTG": {
+    "method": "Small Printer",
+    "sources": [
+      "Nanocarbon Alloy",
+      "Lithium"
+    ]
+  },
+  "Rubber": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Organic",
+      "Resin"
+    ]
+  },
+  "Tungsten Carbide": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Tungsten",
+      "Carbon"
+    ]
+  },
+  "Plastic": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Compound",
+      "Carbon"
+    ]
+  },
+  "Diamond": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Graphene",
+      "Graphene"
+    ]
+  },
+  "Medium Storage Silo": {
+    "method": "Small Printer",
+    "sources": [
+      "Titanium",
+      "Titanium"
+    ]
+  },
+  "Medium Wind Turbine": {
+    "method": "Small Printer",
+    "sources": [
+      "Glass",
+      "Ceramic"
+    ]
+  },
+  "Medium Generator": {
+    "method": "Small Printer",
+    "sources": [
+      "Tungsten",
+      "Aluminum"
+    ]
+  },
+  "Rover Seat": {
+    "method": "Small Printer",
+    "sources": [
+      "Compound",
+      "Compound"
+    ]
+  },
+  "Drill Strength 3": {
+    "method": "Small Printer",
+    "sources": [
+      "Titanium Alloy",
+      "Diamond"
+    ]
+  },
+  "Drill Strength 2": {
+    "method": "Small Printer",
+    "sources": [
+      "Titanium Alloy",
+      "Tungsten Carbide"
+    ]
+  },
+  "Drill Strength 1": {
+    "method": "Small Printer",
+    "sources": [
+      "Ceramic",
+      "Tungsten Carbide"
+    ]
+  },
+  "Winch": {
+    "method": "Small Printer",
+    "sources": [
+      "Tungsten",
+      "Rubber"
+    ]
+  },
+  "Solid-Fuel Thruster": {
+    "method": "Small Printer",
+    "sources": [
+      "Ammonium",
+      "Aluminum"
+    ]
+  },
+  "Hydrazine Thruster": {
+    "method": "Small Printer",
+    "sources": [
+      "Tungsten",
+      "Steel"
+    ]
+  },
+  "Medium Shredder": {
+    "method": "Small Printer",
+    "sources": [
+      "Iron",
+      "Iron"
+    ]
+  },
+  "Oxygenator": {
+    "method": "Small Printer",
+    "sources": [
+      "Ceramic",
+      "Aluminum"
+    ]
+  },
+  "Paver": {
+    "method": "Small Printer",
+    "sources": [
+      "Silicone",
+      "Aluminum Alloy"
+    ]
+  },
+  "Landing Pad": {
+    "method": "Medium Printer",
+    "sources": [
+      "Aluminum",
+      "Ceramic",
+      "Ceramic"
+    ]
+  },
+  "Large Storage Silo A": {
+    "method": "Medium Printer",
+    "sources": [
+      "Aluminum Alloy",
+      "Aluminum Alloy",
+      "Aluminum Alloy"
+    ]
+  },
+  "Hydrazine": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Ammonium",
+      "Ammonium",
+      "Hydrogen"
+    ]
+  },
+  "Nanocarbon Alloy": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Steel",
+      "Helium",
+      "Titanium Alloy"
+    ]
+  },
+  "Titanium Alloy": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Titanium",
+      "Nitrogen",
+      "Graphene"
+    ]
+  },
+  "Large Shredder": {
+    "method": "Medium Printer",
+    "sources": [
+      "Tungsten Carbide",
+      "Iron",
+      "Iron"
+    ]
+  },
+  "Large Storage Silo B": {
+    "method": "Medium Printer",
+    "sources": [
+      "Steel",
+      "Steel",
+      "Steel"
+    ]
+  },
+  "Crane": {
+    "method": "Medium Printer",
+    "sources": [
+      "Steel",
+      "Silicone",
+      "Titanium"
+    ]
+  },
+  "Large Rover Seat": {
+    "method": "Medium Printer",
+    "sources": [
+      "Compound",
+      "Plastic",
+      "Plastic"
+    ]
+  },
+  "Steel": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Carbon",
+      "Argon",
+      "Iron"
+    ]
+  },
+  "Explosive Powder": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Carbon",
+      "Carbon",
+      "Sulfur"
+    ]
+  },
+  "Large Platform C": {
+    "method": "Medium Printer",
+    "sources": [
+      "Iron",
+      "Iron",
+      "Iron"
+    ]
+  },
+  "Large Storage": {
+    "method": "Medium Printer",
+    "sources": [
+      "Ceramic",
+      "Ceramic",
+      "Ceramic"
+    ]
+  },
+  "Silicone": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Resin",
+      "Methane",
+      "Quartz"
+    ]
+  },
+  "Extra Large Shredder": {
+    "method": "Large Printer",
+    "sources": [
+      "Tungsten Carbide",
+      "Tungsten Carbide",
+      "Steel",
+      "Steel"
+    ]
+  },
+  "Extra Large Platform C": {
+    "method": "Large Printer",
+    "sources": [
+      "Steel",
+      "Steel",
+      "Iron",
+      "Iron"
+    ]
+  },
+  "Large Rover": {
+    "method": "Large Printer",
+    "sources": [
+      "Aluminum Alloy",
+      "Aluminum Alloy",
+      "Rubber",
+      "Rubber"
+    ]
+  },
+  "Large Shuttle": {
+    "method": "Large Printer",
+    "sources": [
+      "Titanium Alloy",
+      "Titanium Alloy",
+      "Ceramic",
+      "Ceramic"
+    ]
+  }
+}
