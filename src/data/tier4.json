@@ -1,0 +1,216 @@
+{
+  "Auto Extractor": {
+    "method": "Large Printer",
+    "sources": [
+      "EXO Chip",
+      "Rubber",
+      "Steel",
+      "Tungsten Carbide"
+    ]
+  },
+  "Extra Large Curved Platform": {
+    "method": "Large Printer",
+    "sources": [
+      "Ceramic",
+      "Ceramic",
+      "Compound",
+      "Compound"
+    ]
+  },
+  "Extra Large Platform A": {
+    "method": "Large Printer",
+    "sources": [
+      "Ceramic",
+      "Ceramic",
+      "Iron",
+      "Iron"
+    ]
+  },
+  "Extra Large Platform B": {
+    "method": "Large Printer",
+    "sources": [
+      "Iron",
+      "Iron",
+      "Iron",
+      "Iron"
+    ]
+  },
+  "Extra Large Platform C": {
+    "method": "Large Printer",
+    "sources": [
+      "Iron",
+      "Iron",
+      "Resin",
+      "Resin"
+    ]
+  },
+  "Extra Large Shredder": {
+    "method": "Large Printer",
+    "sources": [
+      "EXO Chip",
+      "EXO Chip",
+      "Steel",
+      "Tungsten Carbide"
+    ]
+  },
+  "Extra Large Storage": {
+    "method": "Large Printer",
+    "sources": [
+      "Ceramic",
+      "Ceramic",
+      "Iron",
+      "Iron"
+    ]
+  },
+  "Figurine Platform": {
+    "method": "Large Printer",
+    "sources": [
+      "Iron",
+      "Iron",
+      "Iron",
+      "Iron"
+    ]
+  },
+  "Landing Pad": {
+    "method": "Large Printer",
+    "sources": [
+      "Aluminum",
+      "Ceramic",
+      "Ceramic"
+    ]
+  },
+  "Large Rover": {
+    "method": "Large Printer",
+    "sources": [
+      "Aluminum Alloy",
+      "EXO Chip",
+      "EXO Chip",
+      "Rubber"
+    ]
+  },
+  "Large Sensor Hoop A": {
+    "method": "Large Printer",
+    "sources": [
+      "Quartz",
+      "Quartz",
+      "Zinc"
+    ]
+  },
+  "Large Sensor Hoop B": {
+    "method": "Large Printer",
+    "sources": [
+      "Quartz",
+      "Zinc",
+      "Zinc"
+    ]
+  },
+  "Large Sensor Ring": {
+    "method": "Large Printer",
+    "sources": [
+      "Quartz",
+      "Zinc"
+    ]
+  },
+  "Large Shuttle": {
+    "method": "Large Printer",
+    "sources": [
+      "Ceramic",
+      "EXO Chip",
+      "EXO Chip",
+      "Titanium Alloy"
+    ]
+  },
+  "Medium Sensor Arch": {
+    "method": "Large Printer",
+    "sources": [
+      "Quartz",
+      "Zinc"
+    ]
+  },
+  "Medium Shuttle": {
+    "method": "Large Printer",
+    "sources": [
+      "Aluminum Alloy",
+      "Ceramic",
+      "Ceramic"
+    ]
+  },
+  "Shelter": {
+    "method": "Large Printer",
+    "sources": [
+      "Plastic",
+      "Plastic",
+      "Silicone",
+      "Silicone"
+    ]
+  },
+  "Small Shuttle": {
+    "method": "Large Printer",
+    "sources": [
+      "Aluminum",
+      "Aluminum"
+    ]
+  },
+  "Solar Array": {
+    "method": "Large Printer",
+    "sources": [
+      "Aluminum Alloy",
+      "Copper",
+      "Glass",
+      "Graphene"
+    ]
+  },
+  "XL Extended Platform": {
+    "method": "Large Printer",
+    "sources": [
+      "Resin",
+      "Resin",
+      "Resin"
+    ]
+  },
+  "XL Sensor Arch": {
+    "method": "Large Printer",
+    "sources": [
+      "Quartz",
+      "Quartz",
+      "Zinc",
+      "Zinc"
+    ]
+  },
+  "XL Sensor Canopy": {
+    "method": "Large Printer",
+    "sources": [
+      "Quartz",
+      "Quartz",
+      "Zinc",
+      "Zinc"
+    ]
+  },
+  "XL Sensor Hoop A": {
+    "method": "Large Printer",
+    "sources": [
+      "Quartz",
+      "Quartz",
+      "Zinc",
+      "Zinc"
+    ]
+  },
+  "XL Sensor Hoop B": {
+    "method": "Large Printer",
+    "sources": [
+      "Quartz",
+      "Zinc",
+      "Zinc",
+      "Zinc"
+    ]
+  },
+  "XL Wind Turbine": {
+    "method": "Large Printer",
+    "sources": [
+      "Aluminum Alloy",
+      "Ceramic",
+      "Graphene",
+      "Iron"
+    ]
+  }
+}

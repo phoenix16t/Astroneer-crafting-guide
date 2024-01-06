@@ -1,0 +1,56 @@
+{
+  "Aluminum": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Laterite"
+    ]
+  },
+  "Carbon": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Organic"
+    ]
+  },
+  "Ceramic": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Clay"
+    ]
+  },
+  "Copper": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Malachite"
+    ]
+  },
+  "Glass": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Quartz"
+    ]
+  },
+  "Iron": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Hematite"
+    ]
+  },
+  "Titanium": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Titanite"
+    ]
+  },
+  "Tungsten": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Wolframite"
+    ]
+  },
+  "Zinc": {
+    "method": "Smelting Furnace",
+    "sources": [
+      "Sphalerite"
+    ]
+  }
+}

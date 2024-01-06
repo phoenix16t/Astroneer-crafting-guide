@@ -1,0 +1,170 @@
+{
+  "Ammonium": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Astronium": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Clay": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Compound": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "EXO Chip": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Graphite": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Hematite": {
+    "planets": [
+      "Glacio",
+      "Novus"
+    ]
+  },
+  "Laterite": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Lithium": {
+    "planets": [
+      "Novus",
+      "Vesania"
+    ]
+  },
+  "Malachite": {
+    "planets": [
+      "Calidor",
+      "Sylva"
+    ]
+  },
+  "Organic": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Quartz": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Resin": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Scrap": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Soil": {
+    "planets": [
+      "Atrox",
+      "Calidor",
+      "Desolo",
+      "Glacio",
+      "Novus",
+      "Sylva",
+      "Vesania"
+    ]
+  },
+  "Sphalerite": {
+    "planets": [
+      "Desolo",
+      "Sylva"
+    ]
+  },
+  "Titanite": {
+    "planets": [
+      "Glacio",
+      "Vesania"
+    ]
+  },
+  "Wolframite": {
+    "planets": [
+      "Calidor",
+      "Desolo"
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "Alignment Mod": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Beacon": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Quartz"
+    ]
+  },
+  "Boost Mod": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Drill Mod 1": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Ceramic"
+    ]
+  },
+  "Drill Mod 2": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Tungsten Carbide"
+    ]
+  },
+  "Drill Mod 3": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Diamond"
+    ]
+  },
+  "Dynamite": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Explosive Powder"
+    ]
+  },
+  "Extenders": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Copper"
+    ]
+  },
+  "Fireworks": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Explosive Powder"
+    ]
+  },
+  "Floodlight": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Tungsten"
+    ]
+  },
+  "Glowsticks": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Organic"
+    ]
+  },
+  "Holographic Figurine": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Plastic"
+    ]
+  },
+  "Hoverboard": {
+    "method": "Backpack Printer",
+    "sources": [
+      "EXO Chip"
+    ]
+  },
+  "Hydrazine Jet Pack": {
+    "method": "Small Printer",
+    "sources": [
+      "Titanium Alloy"
+    ]
+  },
+  "Inhibitor Mod": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Leveling Block": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Soil"
+    ]
+  },
+  "Narrow Mod": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Oxygen Filters": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Resin"
+    ]
+  },
+  "Oxygen Tank": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Glass"
+    ]
+  },
+  "Packager": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Graphite"
+    ]
+  },
+  "Portable Oxygenator": {
+    "method": "Small Printer",
+    "sources": [
+      "Nanocarbon Alloy"
+    ]
+  },
+  "Power Cells": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Graphite"
+    ]
+  },
+  "Probe Scanner": {
+    "method": "Small Printer",
+    "sources": [
+      "Steel"
+    ]
+  },
+  "Small Battery": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Small Camera": {
+    "method": "Backpack Printer",
+    "sources": [
+      "EXO Chip"
+    ]
+  },
+  "Small Canister": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Resin"
+    ]
+  },
+  "Small Generator": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Compound"
+    ]
+  },
+  "Small Printer": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Compound"
+    ]
+  },
+  "Small Solar Panel": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Copper"
+    ]
+  },
+  "Small Trumpet Horn": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Resin"
+    ]
+  },
+  "Small Wind Turbine": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Ceramic"
+    ]
+  },
+  "Solid-Fuel Jump Jet": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Aluminum Alloy"
+    ]
+  },
+  "Terrain Analyzer": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Tethers": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Compound"
+    ]
+  },
+  "Wide Mod": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Worklight": {
+    "method": "Backpack Printer",
+    "sources": [
+      "Copper"
+    ]
+  }
+}

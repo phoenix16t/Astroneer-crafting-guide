@@ -1,0 +1,323 @@
+{
+  "Aluminum Alloy": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Aluminum",
+      "Copper"
+    ]
+  },
+  "Auto Arm": {
+    "method": "Small Printer",
+    "sources": [
+      "Aluminum",
+      "Graphite"
+    ]
+  },
+  "Battery Sensor": {
+    "method": "Small Printer",
+    "sources": [
+      "Graphite",
+      "Zinc"
+    ]
+  },
+  "Button Repeater": {
+    "method": "Small Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Count Repeater": {
+    "method": "Small Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Delay Repeater": {
+    "method": "Small Printer",
+    "sources": [
+      "Zinc"
+    ]
+  },
+  "Diamond": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Graphene",
+      "Graphene"
+    ]
+  },
+  "Drill Strength 1": {
+    "method": "Small Printer",
+    "sources": [
+      "Ceramic",
+      "Tungsten Carbide"
+    ]
+  },
+  "Drill Strength 2": {
+    "method": "Small Printer",
+    "sources": [
+      "Titanium Alloy",
+      "Tungsten Carbide"
+    ]
+  },
+  "Drill Strength 3": {
+    "method": "Small Printer",
+    "sources": [
+      "Diamond",
+      "Titanium Alloy"
+    ]
+  },
+  "Fault Finder": {
+    "method": "Small Printer",
+    "sources": [
+      "Astronium",
+      "Scrap"
+    ]
+  },
+  "Field Shelter": {
+    "method": "Small Printer",
+    "sources": [
+      "Graphene",
+      "Silicone"
+    ]
+  },
+  "Graphene": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Graphite",
+      "Hydrazine"
+    ]
+  },
+  "Hydrazine Thruster": {
+    "method": "Small Printer",
+    "sources": [
+      "EXO Chip",
+      "Steel"
+    ]
+  },
+  "Medium Battery": {
+    "method": "Small Printer",
+    "sources": [
+      "Lithium",
+      "Zinc"
+    ]
+  },
+  "Medium Buggy Horn": {
+    "method": "Small Printer",
+    "sources": [
+      "Plastic",
+      "Rubber"
+    ]
+  },
+  "Medium Fluid & Soil Canister": {
+    "method": "Small Printer",
+    "sources": [
+      "Glass",
+      "Plastic"
+    ]
+  },
+  "Medium Gas Canister": {
+    "method": "Small Printer",
+    "sources": [
+      "Glass",
+      "Silicone"
+    ]
+  },
+  "Medium Generator": {
+    "method": "Small Printer",
+    "sources": [
+      "Aluminum",
+      "Tungsten"
+    ]
+  },
+  "Medium Platform A": {
+    "method": "Small Printer",
+    "sources": [
+      "Resin"
+    ]
+  },
+  "Medium Platform B": {
+    "method": "Small Printer",
+    "sources": [
+      "Resin",
+      "Resin"
+    ]
+  },
+  "Medium Platform C": {
+    "method": "Small Printer",
+    "sources": [
+      "Resin"
+    ]
+  },
+  "Medium Printer": {
+    "method": "Small Printer",
+    "sources": [
+      "Compound",
+      "Compound"
+    ]
+  },
+  "Medium Resource Canister": {
+    "method": "Small Printer",
+    "sources": [
+      "Glass",
+      "Plastic"
+    ]
+  },
+  "Medium Shredder": {
+    "method": "Small Printer",
+    "sources": [
+      "Iron",
+      "Iron"
+    ]
+  },
+  "Medium Solar Panel": {
+    "method": "Small Printer",
+    "sources": [
+      "Copper",
+      "Glass"
+    ]
+  },
+  "Medium Storage": {
+    "method": "Small Printer",
+    "sources": [
+      "Resin",
+      "Resin"
+    ]
+  },
+  "Medium Storage Silo": {
+    "method": "Small Printer",
+    "sources": [
+      "Titanium",
+      "Titanium"
+    ]
+  },
+  "Medium T-Platform": {
+    "method": "Small Printer",
+    "sources": [
+      "Resin",
+      "Resin"
+    ]
+  },
+  "Medium Wind Turbine": {
+    "method": "Small Printer",
+    "sources": [
+      "Aluminum",
+      "Ceramic"
+    ]
+  },
+  "Oxygenator": {
+    "method": "Small Printer",
+    "sources": [
+      "Aluminum",
+      "Ceramic"
+    ]
+  },
+  "Paver": {
+    "method": "Small Printer",
+    "sources": [
+      "Aluminum Alloy",
+      "Silicone"
+    ]
+  },
+  "Plastic": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Carbon",
+      "Compound"
+    ]
+  },
+  "Power Sensor": {
+    "method": "Small Printer",
+    "sources": [
+      "Copper",
+      "Zinc"
+    ]
+  },
+  "Power Switch": {
+    "method": "Small Printer",
+    "sources": [
+      "Copper"
+    ]
+  },
+  "Rover Seat": {
+    "method": "Small Printer",
+    "sources": [
+      "Compound",
+      "Compound"
+    ]
+  },
+  "RTG": {
+    "method": "Small Printer",
+    "sources": [
+      "Lithium",
+      "Nanocarbon Alloy"
+    ]
+  },
+  "Rubber": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Organic",
+      "Resin"
+    ]
+  },
+  "Solid-Fuel Thruster": {
+    "method": "Small Printer",
+    "sources": [
+      "Aluminum",
+      "Ammonium"
+    ]
+  },
+  "Splitter": {
+    "method": "Small Printer",
+    "sources": [
+      "Copper",
+      "Graphite"
+    ]
+  },
+  "Storage Sensor": {
+    "method": "Small Printer",
+    "sources": [
+      "Quartz",
+      "Zinc"
+    ]
+  },
+  "Tall Platform": {
+    "method": "Small Printer",
+    "sources": [
+      "Ceramic"
+    ]
+  },
+  "Tall Storage": {
+    "method": "Small Printer",
+    "sources": [
+      "Ceramic"
+    ]
+  },
+  "Tractor": {
+    "method": "Small Printer",
+    "sources": [
+      "Aluminum",
+      "Aluminum"
+    ]
+  },
+  "Trailer": {
+    "method": "Small Printer",
+    "sources": [
+      "Aluminum",
+      "Compound"
+    ]
+  },
+  "Tungsten Carbide": {
+    "method": "Chemistry Lab",
+    "sources": [
+      "Carbon",
+      "Tungsten"
+    ]
+  },
+  "Winch": {
+    "method": "Small Printer",
+    "sources": [
+      "Rubber",
+      "Tungsten"
+    ]
+  }
+}
