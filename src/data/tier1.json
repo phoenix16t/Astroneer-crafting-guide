@@ -1,216 +1,216 @@
 {
   "Alignment Mod": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Zinc"
     ]
   },
   "Beacon": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Quartz"
     ]
   },
   "Boost Mod": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Zinc"
     ]
   },
   "Drill Mod 1": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Ceramic"
     ]
   },
   "Drill Mod 2": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Tungsten Carbide"
     ]
   },
   "Drill Mod 3": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Diamond"
     ]
   },
   "Dynamite": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Explosive Powder"
     ]
   },
   "Extenders": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Copper"
     ]
   },
   "Fireworks": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Explosive Powder"
     ]
   },
   "Floodlight": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Tungsten"
     ]
   },
   "Glowsticks": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Organic"
     ]
   },
   "Holographic Figurine": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Plastic"
     ]
   },
   "Hoverboard": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "EXO Chip"
     ]
   },
   "Hydrazine Jet Pack": {
-    "method": "Small Printer",
+    "method": "SP",
     "sources": [
       "Titanium Alloy"
     ]
   },
   "Inhibitor Mod": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Zinc"
     ]
   },
   "Leveling Block": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Soil"
     ]
   },
   "Narrow Mod": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Zinc"
     ]
   },
   "Oxygen Filters": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Resin"
     ]
   },
   "Oxygen Tank": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Glass"
     ]
   },
   "Packager": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Graphite"
     ]
   },
   "Portable Oxygenator": {
-    "method": "Small Printer",
+    "method": "SP",
     "sources": [
       "Nanocarbon Alloy"
     ]
   },
   "Power Cells": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Graphite"
     ]
   },
   "Probe Scanner": {
-    "method": "Small Printer",
+    "method": "SP",
     "sources": [
       "Steel"
     ]
   },
   "Small Battery": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Zinc"
     ]
   },
   "Small Camera": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "EXO Chip"
     ]
   },
   "Small Canister": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Resin"
     ]
   },
   "Small Generator": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Compound"
     ]
   },
-  "Small Printer": {
-    "method": "Backpack Printer",
+  "SP": {
+    "method": "BP",
     "sources": [
       "Compound"
     ]
   },
   "Small Solar Panel": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Copper"
     ]
   },
   "Small Trumpet Horn": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Resin"
     ]
   },
   "Small Wind Turbine": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Ceramic"
     ]
   },
   "Solid-Fuel Jump Jet": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Aluminum Alloy"
     ]
   },
   "Terrain Analyzer": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Zinc"
     ]
   },
   "Tethers": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Compound"
     ]
   },
   "Wide Mod": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Zinc"
     ]
   },
   "Worklight": {
-    "method": "Backpack Printer",
+    "method": "BP",
     "sources": [
       "Copper"
     ]

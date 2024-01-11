@@ -1,6 +1,6 @@
 {
   "Atmospheric Condenser": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Glass",
       "Iron",
@@ -8,14 +8,14 @@
     ]
   },
   "Buggy": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Aluminum",
       "Compound"
     ]
   },
-  "Chemistry Lab": {
-    "method": "Medium Printer",
+  "CL": {
+    "method": "MP",
     "sources": [
       "Ceramic",
       "Glass",
@@ -23,7 +23,7 @@
     ]
   },
   "Crane": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Silicone",
       "Steel",
@@ -31,7 +31,7 @@
     ]
   },
   "EXO Request Platform": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Ceramic",
       "Resin",
@@ -39,7 +39,7 @@
     ]
   },
   "Explosive Powder": {
-    "method": "Chemistry Lab",
+    "method": "CL",
     "sources": [
       "Carbon",
       "Carbon",
@@ -47,7 +47,7 @@
     ]
   },
   "Hydrazine": {
-    "method": "Chemistry Lab",
+    "method": "CL",
     "sources": [
       "Ammonium",
       "Ammonium",
@@ -55,7 +55,7 @@
     ]
   },
   "Landing Pad": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Aluminum",
       "Ceramic",
@@ -63,7 +63,7 @@
     ]
   },
   "Large Active Storage": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Aluminum",
       "Resin",
@@ -71,7 +71,7 @@
     ]
   },
   "Large Curved Platform": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Ceramic",
       "Ceramic",
@@ -79,14 +79,14 @@
     ]
   },
   "Large Extended Platform": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Resin",
       "Resin"
     ]
   },
   "Large Fog Horn": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Plastic",
       "Rubber",
@@ -94,14 +94,14 @@
     ]
   },
   "Large Platform A": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Resin",
       "Resin"
     ]
   },
   "Large Platform B": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Resin",
       "Resin",
@@ -109,7 +109,7 @@
     ]
   },
   "Large Platform C": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Ceramic",
       "Iron",
@@ -117,7 +117,7 @@
     ]
   },
   "Large Printer": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Compound",
       "Compound",
@@ -125,7 +125,7 @@
     ]
   },
   "Large Resource Canister": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Glass",
       "Nanocarbon Alloy",
@@ -133,7 +133,7 @@
     ]
   },
   "Large Rover Seat": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Compound",
       "Plastic",
@@ -141,7 +141,7 @@
     ]
   },
   "Large Shredder": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "EXO Chip",
       "Iron",
@@ -149,7 +149,7 @@
     ]
   },
   "Large Solar Panel": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Aluminum Alloy",
       "Copper",
@@ -157,7 +157,7 @@
     ]
   },
   "Large Storage": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Ceramic",
       "Ceramic",
@@ -165,7 +165,7 @@
     ]
   },
   "Large Storage Silo A": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Aluminum",
       "Aluminum",
@@ -173,7 +173,7 @@
     ]
   },
   "Large Storage Silo B": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Steel",
       "Steel",
@@ -181,7 +181,7 @@
     ]
   },
   "Large T-Platform": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Aluminum",
       "Aluminum",
@@ -189,7 +189,7 @@
     ]
   },
   "Large Wind Turbine": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Aluminum Alloy",
       "Ceramic",
@@ -197,7 +197,7 @@
     ]
   },
   "Medium Rover": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Plastic",
       "Plastic",
@@ -205,7 +205,7 @@
     ]
   },
   "Nanocarbon Alloy": {
-    "method": "Chemistry Lab",
+    "method": "CL",
     "sources": [
       "Helium",
       "Steel",
@@ -213,14 +213,14 @@
     ]
   },
   "Recreational Sphere": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Aluminum Alloy",
       "Rubber"
     ]
   },
   "Research Chamber": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Compound",
       "Compound",
@@ -228,7 +228,7 @@
     ]
   },
   "Silicone": {
-    "method": "Chemistry Lab",
+    "method": "CL",
     "sources": [
       "Methane",
       "Quartz",
@@ -236,7 +236,7 @@
     ]
   },
   "Smelting Furnace": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Compound",
       "Resin",
@@ -244,7 +244,7 @@
     ]
   },
   "Soil Centrifuge": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "Aluminum",
       "Compound",
@@ -252,7 +252,7 @@
     ]
   },
   "Steel": {
-    "method": "Chemistry Lab",
+    "method": "CL",
     "sources": [
       "Argon",
       "Carbon",
@@ -260,7 +260,7 @@
     ]
   },
   "Titanium Alloy": {
-    "method": "Chemistry Lab",
+    "method": "CL",
     "sources": [
       "Graphene",
       "Nitrogen",
@@ -268,7 +268,7 @@
     ]
   },
   "Trade Platform": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "EXO Chip",
       "Iron",
@@ -276,7 +276,7 @@
     ]
   },
   "VTOL": {
-    "method": "Medium Printer",
+    "method": "MP",
     "sources": [
       "EXO Chip",
       "Silicone",

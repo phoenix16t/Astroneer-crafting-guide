@@ -1,19 +1,19 @@
 {
   "Argon": {
-    "method": "Atmospheric Condenser",
+    "method": "AC",
     "planets": [
       "Glacio",
       "Vesania"
     ]
   },
   "Helium": {
-    "method": "Atmospheric Condenser",
+    "method": "AC",
     "planets": [
       "Atrox"
     ]
   },
   "Hydrogen": {
-    "method": "Atmospheric Condenser",
+    "method": "AC",
     "planets": [
       "Calidor",
       "Novus",
@@ -22,14 +22,14 @@
     ]
   },
   "Methane": {
-    "method": "Atmospheric Condenser",
+    "method": "AC",
     "planets": [
       "Atrox",
       "Novus"
     ]
   },
   "Nitrogen": {
-    "method": "Atmospheric Condenser",
+    "method": "AC",
     "planets": [
       "Atrox",
       "Sylva",
@@ -37,7 +37,7 @@
     ]
   },
   "Sulfur": {
-    "method": "Atmospheric Condenser",
+    "method": "AC",
     "planets": [
       "Atrox",
       "Calidor"
