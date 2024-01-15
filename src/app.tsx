@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import mermaid from "mermaid";
 
+import { Graph } from "src";
 import {
   atmospheric,
   natural,
@@ -28,29 +29,12 @@ type TreeNode = {
   sources?: TreeNode[] | undefined;
 };
 
-const STR = [
-  "graph TD",
-  "classDef rootElement fill:#6f9",
-  "classDef compoundElement fill:#f96",
-  "classDef planettt fill:#6f9",
-];
-
-enum METHODS {
-  "AC" = "[/Atmospheric Condenser\\]",
-  "BP" = "[[Backpack Printer]]",
-  "CL" = "[/Chemistry Lab\\]",
-  "LP" = "[[Large Printer]]",
-  "MP" = "[[Medium Printer]]",
-  "SP" = "[[Small Printer]]",
-  "SF" = "[(Smelting Furnace)]",
-}
-
 const DEFAULT = "RTG";
 
 export const App = (): JSX.Element => {
-  console.log("\n\n\n");
+  // console.log("\n\n\n");
 
-  const [resource, setResource] = useState<string>(DEFAULT);
+  const [item, setItem] = useState<string>(DEFAULT);
   const [maxDepth, setMaxDepth] = useState<number>(0);
   const [tree, setTree] = useState<TreeNode | undefined>(undefined);
   const [hasCondenser, setHasCondenser] = useState<boolean>(false);
@@ -65,14 +49,18 @@ export const App = (): JSX.Element => {
     return { ...allCraftedItems, ...atmospheric, ...natural };
   }, [allCraftedItems]);
 
-  const extendedArrow = useMemo(() => {
-    return hasCondenser && hasOtherMachines ? "--->" : "-->";
-  }, [hasCondenser, hasOtherMachines]);
-
   const generateTree = useCallback(
-    ({ name, depth = 0 }: { name: string; depth?: number }): TreeNode => {
+    ({
+      name,
+      depth = 0,
+      resources = {},
+    }: {
+      name: string;
+      depth?: number;
+      resources?: { [key: string]: number };
+    }): TreeNode => {
       setMaxDepth((m) => Math.max(m, depth));
-
+      console.log("resource", resources);
       const { method, planets, sources } = allItems[name] ?? {};
 
       if (planets !== undefined) {
@@ -81,7 +69,7 @@ export const App = (): JSX.Element => {
 
       const sourceList = sources
         ?.sort()
-        .map((s) => generateTree({ depth: depth + 1, name: s }));
+        .map((s) => generateTree({ name: s, depth: depth + 1 }));
 
       return {
         name,
@@ -93,58 +81,13 @@ export const App = (): JSX.Element => {
     [allItems],
   );
 
-  const buildChart = useCallback(
-    (asdf: TreeNode, id = "0"): string[] => {
-      const { method, name, planets, sources } = asdf;
-      const prevId = id.replace(/-\d+$/, "");
-      const depth = (id.match(/-/g) || []).length;
-      const calc = Math.max(maxDepth - depth, 0);
-      const dash = maxDepth === 0 ? "--" : "-".repeat(calc * 2);
-      const str: string[] = [];
-
-      const m = METHODS[method as keyof typeof METHODS];
-      const isAtmosphericItem =
-        atmospheric[name as keyof typeof atmospheric] !== undefined;
-      const isNaturalItem = natural[name as keyof typeof natural] !== undefined;
-
-      const p =
-        planets !== undefined ? `planet${id}([${planets.join("<br>")}])` : "";
-
-      if (isAtmosphericItem) {
-        str.push(`${p} --> method${id}`);
-        str.push(`method${id}${m} --> item${id}`);
-      } else if (isNaturalItem) {
-        str.push(`${p} ${extendedArrow} item${id}`);
-      } else {
-        str.push(`method${id}${m} --> item${id}`);
-      }
-
-      if (planets !== undefined) {
-        str.push(`class planet${id} planettt`);
-      }
-
-      const s = ` ${planets === undefined ? "" : dash}--> method${prevId}`;
-
-      const methodStr = id === "0" ? "" : s;
-
-      str.push(`item${id}[${name}]${methodStr}`);
-      str.push(`class item${id} compoundElement`);
-
-      (sources || []).forEach((source, i) => {
-        str.push(...buildChart(source, `${id}-${i}`));
-      });
-
-      return str;
-    },
-    [extendedArrow, maxDepth],
-  );
-
   const handleChange = useCallback((e: { target: { value: string } }) => {
     setMaxDepth(0);
     setHasCondenser(false);
     setHasOtherMachines(false);
     setTree(undefined);
-    setResource(e.target.value);
+
+    setItem(e.target.value);
   }, []);
 
   useEffect(() => {
@@ -154,30 +97,12 @@ export const App = (): JSX.Element => {
   }, []);
 
   useEffect(() => {
-    if (tree === undefined) {
-      return;
-    }
-
-    const graph = STR.concat(buildChart(tree)).join(";\n");
-    mermaid.mermaidAPI
-      .render("flow", graph, craftFlowRef.current || undefined)
-      .then((result) => {
-        if (craftFlowRef.current) {
-          craftFlowRef.current.innerHTML = result.svg;
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, [buildChart, tree]);
-
-  useEffect(() => {
-    setTree(generateTree({ name: resource }));
-  }, [resource, generateTree]);
+    setTree(generateTree({ name: item }));
+  }, [generateTree, item]);
 
   return (
     <>
-      <select onChange={handleChange} value={resource}>
+      <select onChange={handleChange} value={item}>
         {Object.keys(allCraftedItems)
           .sort()
           .map((itemName) => {
@@ -189,7 +114,12 @@ export const App = (): JSX.Element => {
           })}
       </select>
 
-      <div ref={craftFlowRef} />
+      <Graph
+        hasCondenser={hasCondenser}
+        hasOtherMachines={hasOtherMachines}
+        maxDepth={maxDepth}
+        tree={tree}
+      />
 
       <div>sdlihfs</div>
     </>
