@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import mermaid from "mermaid";
 
 import { Graph } from "src";
+import { ResourceList, Routing } from "src";
 import {
   atmospheric,
   natural,
@@ -11,6 +12,8 @@ import {
   tier3,
   tier4,
 } from "data";
+
+import "./style.scss";
 
 type Item = {
   method?: string;
@@ -39,6 +42,7 @@ export const App = (): JSX.Element => {
   const [tree, setTree] = useState<TreeNode | undefined>(undefined);
   const [hasCondenser, setHasCondenser] = useState<boolean>(false);
   const [hasOtherMachines, setHasOtherMachines] = useState<boolean>(false);
+  const [currentResources, setCurrentResources] = useState<object>({});
   const craftFlowRef = useRef<HTMLDivElement | null>(null);
 
   const allCraftedItems = useMemo((): Items => {
@@ -49,7 +53,7 @@ export const App = (): JSX.Element => {
     return { ...allCraftedItems, ...atmospheric, ...natural };
   }, [allCraftedItems]);
 
-  const generateTree = useCallback(
+  const generateTreeData = useCallback(
     ({
       name,
       depth = 0,
@@ -60,16 +64,22 @@ export const App = (): JSX.Element => {
       resources?: { [key: string]: number };
     }): TreeNode => {
       setMaxDepth((m) => Math.max(m, depth));
-      console.log("resource", resources);
+
       const { method, planets, sources } = allItems[name] ?? {};
 
       if (planets !== undefined) {
         method === "AC" ? setHasCondenser(true) : setHasOtherMachines(true);
+        resources[name] =
+          resources[name] === undefined ? 1 : resources[name] + 1;
       }
 
-      const sourceList = sources
-        ?.sort()
-        .map((s) => generateTree({ name: s, depth: depth + 1 }));
+      const sourceList = sources?.sort().map((name) => {
+        return generateTreeData({
+          name,
+          depth: depth + 1,
+          resources,
+        });
+      });
 
       return {
         name,
@@ -80,6 +90,22 @@ export const App = (): JSX.Element => {
     },
     [allItems],
   );
+
+  const generateTreeData2 = useMemo((): {
+    resources: object;
+    treeData: TreeNode;
+  } => {
+    // console.log("tttt2", name);
+    const resources = {}; // closure
+    // const treeData = generateTreeData({ name: item, resources });
+    // console.log("treeData", treeData);
+    // console.log("resources", resources);
+
+    return {
+      resources,
+      treeData: generateTreeData({ name: item, resources }),
+    };
+  }, [generateTreeData, item]);
 
   const handleChange = useCallback((e: { target: { value: string } }) => {
     setMaxDepth(0);
@@ -97,31 +123,44 @@ export const App = (): JSX.Element => {
   }, []);
 
   useEffect(() => {
-    setTree(generateTree({ name: item }));
-  }, [generateTree, item]);
+    // console.log("generateTreeData2", generateTreeData2);
+    setTree(generateTreeData2.treeData);
+    setCurrentResources(generateTreeData2.resources);
+  }, [generateTreeData2, item]);
+
+  // console.log("resources", resources);
+  // console.log("currentResources", currentResources);
 
   return (
-    <>
-      <select onChange={handleChange} value={item}>
-        {Object.keys(allCraftedItems)
-          .sort()
-          .map((itemName) => {
-            return (
-              <option key={itemName} value={itemName}>
-                {itemName}
-              </option>
-            );
-          })}
-      </select>
+    <div className="app">
+      <div className="selection">
+        <select onChange={handleChange} value={item}>
+          {Object.keys(allCraftedItems)
+            .sort()
+            .map((itemName) => {
+              return (
+                <option key={itemName} value={itemName}>
+                  {itemName}
+                </option>
+              );
+            })}
+        </select>
+      </div>
 
-      <Graph
-        hasCondenser={hasCondenser}
-        hasOtherMachines={hasOtherMachines}
-        maxDepth={maxDepth}
-        tree={tree}
-      />
+      <div className="graph">
+        <Graph
+          hasCondenser={hasCondenser}
+          hasOtherMachines={hasOtherMachines}
+          maxDepth={maxDepth}
+          tree={tree}
+        />
+      </div>
 
-      <div>sdlihfs</div>
-    </>
+      <div className="informationPanel">
+        <ResourceList resources={currentResources} />
+
+        <Routing resources={currentResources} />
+      </div>
+    </div>
   );
 };

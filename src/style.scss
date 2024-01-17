@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  columns: 2;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+}
+
+.graph {
+  margin: 10px;
+  overflow: scroll;
+}
+
+.informationPanel {
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
+
+  &>div {
+    border: 1px solid black;
+    border-radius: 5px;
+    min-height: 50px;
+    padding: 5px;
+    width: 50%;
+  }
+}
