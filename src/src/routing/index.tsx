@@ -1,25 +1,15 @@
 import { useMemo } from "react";
-
+import { Resources } from "types";
 import { atmospheric, natural } from "data";
 
 import "./style.scss";
 
-type Item = {
-  method?: string;
-  planets?: string[];
-  sources?: string[];
-};
-
-type Items = {
-  [key: string]: Item;
-};
-
 export const Routing = ({ resources }: { resources: object }): JSX.Element => {
-  const allNaturalItems = useMemo((): Items => {
+  const allNaturalItems = useMemo((): Resources => {
     return { ...atmospheric, ...natural };
   }, []);
 
-  const sortedList = useMemo(() => {
+  const sortedResourceList = useMemo((): string[] => {
     return Object.keys(resources)
       .filter((resource) => {
         return allNaturalItems[resource].planets!.length < 7;
@@ -32,68 +22,71 @@ export const Routing = ({ resources }: { resources: object }): JSX.Element => {
       });
   }, [allNaturalItems, resources]);
 
-  const cartesianProduct = (arrays: string[][]): string[][] => {
-    const result: string[][] = [[]];
+  const planetLists = useMemo((): string[][] => {
+    return Object.values(sortedResourceList).map(
+      (mineral) => allNaturalItems[mineral].planets!,
+    );
+  }, [allNaturalItems, sortedResourceList]);
 
-    arrays.forEach((array) => {
+  const allCombinations = useMemo((): string[][] => {
+    const combinations: string[][] = [[]];
+
+    planetLists.forEach((planetList) => {
       const currentResult: string[][] = [];
-      result.forEach((element) => {
-        array.forEach((value) => {
-          currentResult.push([...element, value]);
+      combinations.forEach((combo) => {
+        planetList.forEach((value) => {
+          currentResult.push([...combo, value]);
         });
       });
 
-      result.length = 0;
-      result.push(...currentResult);
+      combinations.length = 0;
+      combinations.push(...currentResult);
     });
 
-    return result;
-  };
+    return combinations;
+  }, [planetLists]);
 
-  const mineralArrays: string[][] = Object.values(sortedList).map(
-    (mineral) => allNaturalItems[mineral].planets!,
-  );
+  const chosenRoute = useMemo((): string[] => {
+    return [
+      ...allCombinations
+        .map((p) => new Set(p))
+        .sort((a, b) => a.size - b.size)[0],
+    ];
+  }, [allCombinations]);
 
-  const combinations = cartesianProduct(mineralArrays);
+  const routeData = useMemo((): [string, string[]][] => {
+    return Object.entries(
+      Array.from(new Set(Object.keys(resources))).reduce(
+        (storage: { [key: string]: string[] }, resource) => {
+          const planet = allNaturalItems[resource].planets?.filter((p) =>
+            chosenRoute.includes(p),
+          )[0];
 
-  const blah2 = [
-    ...combinations.map((p) => new Set(p)).sort((a, b) => a.size - b.size)[0],
-  ];
+          if (planet === undefined) {
+            return storage;
+          }
 
-  const z = Array.from(new Set(Object.keys(resources))).reduce(
-    (storage: { [key: string]: string[] }, r) => {
-      const planet = allNaturalItems[r].planets?.filter((p) =>
-        blah2.includes(p),
-      )[0];
-
-      if (planet === undefined) {
-        return storage;
-      }
-
-      storage[planet] = storage[planet] !== undefined ? storage[planet] : [];
-      storage[planet].push(r);
-      return storage;
-    },
-    {},
-  );
-
-  console.log("z", z);
+          storage[planet] =
+            storage[planet] !== undefined ? storage[planet] : [];
+          storage[planet].push(resource);
+          return storage;
+        },
+        {},
+      ),
+    ).sort((a, b) => a[0].localeCompare(b[0]));
+  }, [allNaturalItems, chosenRoute, resources]);
 
   return (
     <div className="routing">
       <h4>Possible Planet Route</h4>
       <ul>
-        {Object.entries(z)
-          .sort((a, b) => {
-            return a[0].localeCompare(b[0]);
-          })
-          .map((x) => {
-            return (
-              <li key={x[0]}>
-                <div className="planet">{x[0]}</div> - {x[1].join(" / ")}
-              </li>
-            );
-          })}
+        {routeData.map((x) => {
+          return (
+            <li key={x[0]}>
+              <div className="planet">{x[0]}</div> - {x[1].join(" / ")}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

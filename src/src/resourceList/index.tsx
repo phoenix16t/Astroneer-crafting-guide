@@ -1,22 +1,22 @@
+import { useMemo } from "react";
+import { ResourceCount } from "types";
+
 import "./style.scss";
 
 export const ResourceList = ({
   resources,
 }: {
-  resources: object;
+  resources: ResourceCount;
 }): JSX.Element => {
-  // console.log("rrr", resources);
-
-  const sortedList = Object.keys(resources).sort((a, b) => {
-    return a.localeCompare(b);
-  });
-  // console.log("sortedList", sortedList);
+  const sortedResourceList = useMemo((): string[] => {
+    return Object.keys(resources).sort((a, b) => a.localeCompare(b));
+  }, [resources]);
 
   return (
     <div className="resourceList">
       <h4>Required Resources</h4>
       <ul>
-        {sortedList.map((name) => (
+        {sortedResourceList.map((name) => (
           <li key={name}>
             {name}: {resources[name as keyof typeof resources]}
           </li>
