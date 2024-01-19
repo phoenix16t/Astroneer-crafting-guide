@@ -1,6 +1,8 @@
-import { atmospheric, natural } from "data";
-// import { useCallback, useEffect, useMemo } from "react";
 import { useMemo } from "react";
+
+import { atmospheric, natural } from "data";
+
+import "./style.scss";
 
 type Item = {
   method?: string;
@@ -13,15 +15,9 @@ type Items = {
 };
 
 export const Routing = ({ resources }: { resources: object }): JSX.Element => {
-  // console.log("fff", resources);
-
   const allNaturalItems = useMemo((): Items => {
     return { ...atmospheric, ...natural };
   }, []);
-
-  // Object.keys(resources).forEach((resource) => {
-  //   console.log("zzzz", resource, allNaturalItems[resource]);
-  // });
 
   const sortedList = useMemo(() => {
     return Object.keys(resources)
@@ -35,9 +31,6 @@ export const Routing = ({ resources }: { resources: object }): JSX.Element => {
         );
       });
   }, [allNaturalItems, resources]);
-
-  // console.log("allNaturalItems", allNaturalItems);
-  // console.log("sortedList", sortedList);
 
   const cartesianProduct = (arrays: string[][]): string[][] => {
     const result: string[][] = [[]];
@@ -60,33 +53,47 @@ export const Routing = ({ resources }: { resources: object }): JSX.Element => {
   const mineralArrays: string[][] = Object.values(sortedList).map(
     (mineral) => allNaturalItems[mineral].planets!,
   );
+
   const combinations = cartesianProduct(mineralArrays);
 
-  console.log("combinations", combinations);
+  const blah2 = [
+    ...combinations.map((p) => new Set(p)).sort((a, b) => a.size - b.size)[0],
+  ];
 
-  const blah = combinations.map((p) => {
-    return new Set(p);
-  });
+  const z = Array.from(new Set(Object.keys(resources))).reduce(
+    (storage: { [key: string]: string[] }, r) => {
+      const planet = allNaturalItems[r].planets?.filter((p) =>
+        blah2.includes(p),
+      )[0];
 
-  console.log(
-    "blah",
-    [...blah.sort((a, b) => a.size - b.size)[0]].map((planet) => {
-      return planet;
-    }),
+      if (planet === undefined) {
+        return storage;
+      }
+
+      storage[planet] = storage[planet] !== undefined ? storage[planet] : [];
+      storage[planet].push(r);
+      return storage;
+    },
+    {},
   );
 
-  // useEffect(() => {
-  //   // const blah = cartesianProduct(sortedList);
-  //   console.log("blah", blah);
-  // }, [cartesianProduct, sortedList]);
+  console.log("z", z);
 
   return (
     <div className="routing">
-      <h4>Possible Route</h4>
+      <h4>Possible Planet Route</h4>
       <ul>
-        {[...blah.sort((a, b) => a.size - b.size)[0]].map((planet) => {
-          return <li key={planet}>{planet}</li>;
-        })}
+        {Object.entries(z)
+          .sort((a, b) => {
+            return a[0].localeCompare(b[0]);
+          })
+          .map((x) => {
+            return (
+              <li key={x[0]}>
+                <div className="planet">{x[0]}</div> - {x[1].join(" / ")}
+              </li>
+            );
+          })}
       </ul>
     </div>
   );
