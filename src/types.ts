@@ -18,3 +18,13 @@ export type TreeNode = {
   planets?: string[] | undefined;
   sources?: TreeNode[] | undefined;
 };
+
+export enum Methods {
+  "AC" = "[/Atmospheric<br />Condenser\\]",
+  "BP" = "[[Backpack<br />Printer]]",
+  "CL" = "{{Chemistry<br />Lab}}",
+  "LP" = "[[Large<br />Printer]]",
+  "MP" = "[[Medium<br />Printer]]",
+  "SP" = "[[Small<br />Printer]]",
+  "SF" = "[(Smelting<br />Furnace)]",
+}

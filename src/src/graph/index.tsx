@@ -1,24 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef } from "react";
 import mermaid from "mermaid";
 
+import { Methods, TreeNode } from "types";
 import { atmospheric, natural } from "data";
-
-enum METHODS {
-  "AC" = "[/Atmospheric<br />Condenser\\]",
-  "BP" = "[[Backpack<br />Printer]]",
-  "CL" = "{{Chemistry<br />Lab}}",
-  "LP" = "[[Large<br />Printer]]",
-  "MP" = "[[Medium<br />Printer]]",
-  "SP" = "[[Small<br />Printer]]",
-  "SF" = "[(Smelting<br />Furnace)]",
-}
-
-type TreeNode = {
-  name: string;
-  method?: string | undefined;
-  planets?: string[] | undefined;
-  sources?: TreeNode[] | undefined;
-};
 
 const STR = [
   "graph TD",
@@ -69,7 +53,7 @@ export const Graph = ({
 
       // add method info
       if (!isNaturalItem) {
-        const methodName = METHODS[method as keyof typeof METHODS];
+        const methodName = Methods[method as keyof typeof Methods];
         graphSteps.push(`method${id}${methodName} --> item${id}`);
       }
 
