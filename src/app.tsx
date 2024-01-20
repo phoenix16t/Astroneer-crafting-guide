@@ -16,7 +16,11 @@ import "./style.scss";
 
 const DEFAULT = "RTG";
 
-export const App = (): JSX.Element => {
+export const App = ({
+  direction = "TD",
+}: {
+  direction: string;
+}): JSX.Element => {
   const [item, setItem] = useState<string>(DEFAULT);
   const [maxDepth, setMaxDepth] = useState<number>(0);
   const [tree, setTree] = useState<TreeNode | undefined>(undefined);
@@ -114,6 +118,7 @@ export const App = (): JSX.Element => {
 
       <div className="graph">
         <Graph
+          direction={direction}
           hasCondenser={hasCondenser}
           hasOtherMachines={hasOtherMachines}
           maxDepth={maxDepth}

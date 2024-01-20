@@ -5,7 +5,6 @@ import { Methods, TreeNode } from "types";
 import { atmospheric, natural } from "data";
 
 const STR = [
-  "graph TD",
   "classDef naturalElement fill:#0f0",
   "classDef craftedItem fill:#f96",
   "classDef planet fill:#6ff",
@@ -13,11 +12,13 @@ const STR = [
 ];
 
 export const Graph = ({
+  direction,
   hasCondenser,
   hasOtherMachines,
   maxDepth,
   tree,
 }: {
+  direction: string;
   hasCondenser: boolean;
   hasOtherMachines: boolean;
   maxDepth: number;
@@ -85,7 +86,10 @@ export const Graph = ({
       return;
     }
 
-    const graph = STR.concat(buildChart({ treeNode: tree })).join(";\n");
+    const graph = [`graph ${direction}`, ...STR]
+      .concat(buildChart({ treeNode: tree }))
+      .join(";\n");
+
     mermaid.mermaidAPI
       .render("flow", graph, craftFlowRef.current || undefined)
       .then((result) => {
@@ -96,7 +100,7 @@ export const Graph = ({
       .catch((error) => {
         console.error(error);
       });
-  }, [buildChart, tree]);
+  }, [buildChart, direction, tree]);
 
   return <div ref={craftFlowRef} />;
 };
