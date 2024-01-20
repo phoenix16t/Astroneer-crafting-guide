@@ -17,7 +17,7 @@ import "./style.scss";
 const DEFAULT = "RTG";
 
 export const App = ({
-  direction = "TD",
+  direction = "TB",
 }: {
   direction: string;
 }): JSX.Element => {

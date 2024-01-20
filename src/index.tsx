@@ -8,6 +8,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <StrictMode>
-    <App direction="TD" />
+    <App direction="TB" />
   </StrictMode>,
 );
