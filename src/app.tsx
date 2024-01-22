@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import mermaid from "mermaid";
-import { Graph, ResourceList, Routing } from "src";
+
+import { Graph, ResourceList, Routing } from "components";
 import { ResourceCount, Resources, TreeNode } from "types";
 import {
   atmospheric,

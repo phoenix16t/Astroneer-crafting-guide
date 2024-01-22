@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -14,6 +16,10 @@ body,
 h4 {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  padding-left: 30px;
 }
 
 .app {
@@ -37,7 +43,7 @@ h4 {
     border: 1px solid black;
     border-radius: 5px;
     min-height: 50px;
-    padding: 5px;
+    padding: 10px;
     width: 50%;
   }
 }
